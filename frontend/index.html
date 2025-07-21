@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>House Price Predictor</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Predict House Price</h1>
+    <form id="predict-form">
+      <div class="form-group">
+        <label>Bedrooms: <input type="number" name="bedrooms" required /></label>
+        <label>Bathrooms: <input type="number" step="0.1" name="bathrooms" required /></label>
+        <label>Sqft Living: <input type="number" name="sqft_living" required /></label>
+        <label>Sqft Lot: <input type="number" name="sqft_lot" required /></label>
+        <label>Floors: <input type="number" step="0.1" name="floors" required /></label>
+        <label>Waterfront: 
+          <select name="waterfront" required>
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+          </select>
+        </label>
+        <label>View: <input type="number" name="view" required /></label>
+        <label>Condition: <input type="number" name="condition" required /></label>
+        <label>Grade: <input type="number" name="grade" required /></label>
+        <label>Sqft Above: <input type="number" name="sqft_above" required /></label>
+        <label>Sqft Basement: <input type="number" name="sqft_basement" required /></label>
+        <label>Year Built: <input type="number" name="yr_built" required /></label>
+        <label>Year Renovated: <input type="number" name="yr_renovated" required /></label>
+        <label>Latitude: <input type="number" step="0.0001" name="lat" required /></label>
+        <label>Longitude: <input type="number" step="0.0001" name="long" required /></label>
+        <label>Sqft Living 15: <input type="number" name="sqft_living15" required /></label>
+        <label>Sqft Lot 15: <input type="number" name="sqft_lot15" required /></label>
+      </div>
+      <button type="submit">Predict</button>
+    </form>
+    <div id="result"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
