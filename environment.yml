@@ -1,0 +1,14 @@
+name: house_api
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - numpy
+  - scikit-learn
+  - pydantic
+  - pip
+  - pip:
+      - fastapi
+      - uvicorn
+      - joblib
